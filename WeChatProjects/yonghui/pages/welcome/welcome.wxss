@@ -1,0 +1,23 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+page{ 
+  height: 100%;
+}
+.canvas {
+  width: 300px;
+  height:300px;
+}
+.user-name-container{
+  height: 80rpx;
+  width: 400rpx;
+  position:relative;
+  font-size: 48rpx;
+  
+}
+.user-name-container .logo{
+   height: 60rpx;
+  width: 60rpx;
+}

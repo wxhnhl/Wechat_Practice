@@ -1,0 +1,53 @@
+/**index.wxss**/
+.page{
+  font-size:45rpx;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.input{
+  font-size: 43rpx;
+  width: 100%;
+background-color:rgba(233, 241, 241, 0.178);
+}
+
+.set1 {
+  margin: 0rpx 0rpx 50rpx 0rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.set2 {
+  margin: 0rpx 0rpx 50rpx 0rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.set3 {
+  margin: 0rpx 0rpx 50rpx 0rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.set4 {
+  margin: 0rpx 0rpx 50rpx 0rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn-area {
+  width: 100%;
+}
+.body{
+  margin-top:20px;
+}
+
+

@@ -1,0 +1,13 @@
+
+<view class="container">
+
+ <canvas class="canvas" canvas-id="myCanvas"></canvas>
+<image src="../images/yonghui.jpg"> </image> 
+  <view class="user-name-container">
+  <image class="logo" src="../images/yhlogo.jpg"> </image> 
+    <text class="user-name" bindtap="onTab" style="color:orange">健 康 每 一 天</text>
+  </view>
+
+  
+ 
+</view>

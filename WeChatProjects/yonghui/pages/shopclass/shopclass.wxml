@@ -1,0 +1,26 @@
+<!--pages/shopclass/shopclass.wxml-->
+
+<view class="body" >
+    <view class="flex-row" >
+        <view bindtap='c' class="{{btnc}}">水果</view>
+        <view bindtap='d' class="{{btnd}}">蔬菜</view>
+        <view bindtap='e' class="{{btne}}">肉类</view>
+        <view bindtap='f' class="{{btnf}}">海鲜</view>
+        <view bindtap='g' class="{{btng}}">牛奶</view>
+        <view bindtap='a' class="{{btna}}">干果</view>
+        <view bindtap='b' class="{{btnb}}">零食</view>
+    </view>
+    
+    <view class="index-container">
+  <view class="index-dianpu-name">
+    <image class="index-dianpu" src="{{dianputupian}}"></image>
+    <view class="index-a">
+    <text class="index-name">{{dpname}}</text>
+    <text class="index-shop">{{mingcheng}}{{jiage}}</text></view>
+    <view class="add" catchtap="addCart">加入购物车</view>
+  </view>
+    <image class="index-image" src="{{imgSrc}}"></image>
+ </view>
+     <image mode="scaleToFill" src="{{src}}"></image>    
+   
+</view>    

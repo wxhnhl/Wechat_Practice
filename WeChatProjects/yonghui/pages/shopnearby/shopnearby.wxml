@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="page">
+  <view class="top">
+    <view class="bottom">
+      <view clss="input"><input  placeholder="输入城市" bindinput="bindKeyInput"/></view>
+      <view class="icon" bindtap="search">切换</view> </view> 
+    <view class="today"><text>{{todaymonth}}月{{todaydate}}日</text></view>
+    <view class="weather">
+      <text>{{weather}}</text>
+      <view >
+      <image src="{{pic}}" mode="aspectFit" style="width: 60rpx; height: 60rpx"></image>
+      </view></view>
+    <view class="right">
+      <view class="wind">
+      <text>{{wind}}</text></view>
+      <view class="temp">
+      <text>{{temp}}</text></view></view>    
+  </view> 
+  <view class="body">
+    <view class="city"><text>{{city}}</text></view>          
+  </view>
+
+ <block   wx:for="{{indexList}}"  data="{{...item}}" wx:for-item="item" wx:for-index="idx">
+ <view class="index-container">
+  <view class="index-dianpu-name">
+    <image class="index-dianpu" src="{{item.dianputupian}}"></image>
+    <view class="index-detail">
+      <text class="index-name">{{item.dpname}}</text>
+      <view class="index-detail-1">
+          <image class="index-like-image" src="/pages/images/icon/collect.png"></image>
+          <text class="index-like-font">{{item.haopinglv}}|{{item.dianpunianling}}</text></view>
+    </view>
+    <view class="jindian" catchtap="enterStore" data-indexId="{{item.indexId}}">进店</view></view>
+    <view class="index-like1">
+      <view class="index-like">
+        <image class="index-like-image1" src="/pages/images/sg1.png"></image>
+        <text class="index-like-font1">￥666</text></view>
+     <view class="index-like">
+        <image class="index-like-image1" src="/pages/images/sg2.png"></image>
+        <text class="index-like-font1">￥666</text></view>
+     <view class="index-like">  
+        <image class="index-like-image1" src="/pages/images/sg3.png"></image>
+        <text class="index-like-font1">￥666</text></view></view>
+ </view>
+</block>
+  <view class="contest" style="margin-left:25%;">参与有奖竞猜活动：</view>
+  <view style="margin-top:60px;">
+  <image src="../images/luopan.png" style="width:300px; height: 300px" animation='{{anim}}' catchtouchstart="start" catchtouchmove="move" catchtouchend="end">
+</image></view>
+</view>

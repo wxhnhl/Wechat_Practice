@@ -1,0 +1,14 @@
+<view >
+    <view class="login">点击登录/注册</view>
+    <view class="img"><image src="../images/me.png"></image></view>
+    <view class="menu">
+      <view >报名申请</view>
+      <view class="_menu">信息维护</view>
+      <view class="_menu">选课</view>
+      <view class="_menu">信息查询</view>
+    </view>
+    <block  wx:for="{{indexList}}" >
+     <text class="_item">{{item.iname}}</text>
+      <image class="_item-image" src="{{item.imageSrc}}"></image>
+    </block>
+</view>

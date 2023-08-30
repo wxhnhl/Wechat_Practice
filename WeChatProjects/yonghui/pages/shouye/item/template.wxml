@@ -1,0 +1,18 @@
+<template name="indexItem">
+ <view class="index-container">
+  <view class="index-dianpu-name">
+    <image class="index-dianpu" src="{{dianputupian}}"></image>
+    <text class="index-name">{{dpname}}</text>
+  </view>
+    <text class="index-shop">{{mingcheng}}</text>
+    <image class="index-image" src="{{imgSrc}}"></image>
+    <text class="index-content">{{content}}</text>
+    <view class="index-like">
+        <image class="index-like-image" src="/pages/images/icon/collect.png"></image>
+        <text class="index-like-font">{{collection}}</text>
+
+        <image class="index-like-image" src="/pages/images/icon/view.png"></image>
+        <text class="index-like-font">{{viewing}}</text>
+    </view>
+ </view>
+</template>

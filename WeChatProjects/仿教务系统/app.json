@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/xwdt/xwdt",
+    "pages/xytz/xytz",
+    
+    
+    "pages/zhtz/zhtz",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "教务系统",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "backgroundColor":"#ffffff",
+    "color":"#999999",
+    "list":[
+      {"pagePath":"pages/xwdt/xwdt",
+    "text":"新闻动态",
+    "iconPath":"pages/images/xwdt.png",
+    "selectedIconPath":"pages/images/xwdt1.png"
+      },
+      {
+        "pagePath": "pages/xytz/xytz",
+        "text": "学业通知",
+        "iconPath": "pages/images/xytz.png",
+        "selectedIconPath": "pages/images/xytz1.png"
+      },
+      {
+        "pagePath": "pages/zhtz/zhtz",
+        "text": "综合通知",
+        "iconPath": "pages/images/zhtz.png",
+        "selectedIconPath": "pages/images/zhtz1.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我",
+        "iconPath": "pages/images/me.png",
+        "selectedIconPath": "pages/images/me1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="page">
+  <view style="margin-left:30%;"><text >请填写收货地址</text></view>
+  <view class="header">
+    <form bindsubmit="formSubmit1" bindreset="formReset1" report-submit="true">
+     <view class="set1">
+       <view><text>收货人</text></view>
+        <view class="input"><input placeholder="" name="orderno" ></input></view>
+     </view>
+      <view class="set2">
+       <view class="section__title">收货地址</view>
+        <view class="input"><input placeholder="" name="orderadress" ></input></view>
+     </view>
+     <view class="set4">
+       <view class="tel"><text>手机号码</text></view>
+        <view class="inputtel"><input name="ordertel" class="input" placeholder="" maxlength="11" style="width:300rpx"></input></view>
+     </view>
+      <view class="btn-area">
+        <button formType="submit" type="primary" style="background-color:orange;">保存</button>
+        <button formType="reset">重置</button>
+     </view>
+    </form>
+    </view>
+
+<view class="body">
+    <text style="margin-left:20%;">商品的价格为:{{fei2}}</text>     
+    <form bindsubmit="formSubmit" bindreset="formReset">   
+    <view ><button  formType="submit" type="primary" style="background-color:orange;">结算</button>
+    <button formType="reset"  >取消</button></view>
+    </form>
+    <view><text style="margin-left:30%">\n价格总额：{{fei}}   优惠后:{{fei2}}</text></view>
+</view>
+
+</view>
+

@@ -1,0 +1,7 @@
+<view class="page">
+<button bindtap="wxpay">微信支付</button>
+<button bindtap="zgyhpay">中国银行储蓄卡</button>
+<button bindtap="addCardPay">+使用新卡支付</button>
+<view >{{resultInfo}}</view>
+<view >{{bindInfo}}</view>
+</view>

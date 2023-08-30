@@ -1,0 +1,19 @@
+<import src="item/template.wxml"/>
+<view>
+  <swiper catchtap="onSwiperTap" vertical="{{false}}" indicator-dots="true" autoplay="true" interval="5000">
+    <swiper-item>
+      <image id="7" src="/pages/images/sg1.png" data-indexId="0"></image>
+    </swiper-item>
+    <swiper-item>
+      <image id="7" src="/pages/images/sg2.png" data-indexId="1"></image>
+    </swiper-item>
+    <swiper-item>
+      <image id="7" src="/pages/images/sg3.png" data-indexId="2"></image>
+    </swiper-item>
+  </swiper>
+  <block wx:for="{{indexList}}" wx:for-item="item" wx:for-index="idx">
+    <view catchtap="onIndexTap" data-indexId="{{item.indexId}}">
+      <template is="indexItem" data="{{...item}}"/>
+    </view>
+  </block>
+</view>

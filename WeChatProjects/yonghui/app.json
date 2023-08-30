@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/shouye/shouye",
+    "pages/shopnearby/shopnearby",
+    "pages/shopclass/shopclass"
+  ],
+  "tabBar": {
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/shouye/shouye",
+        "text": "首页",
+        "iconPath": "pages/images/tab/index.png",
+        "selectedIconPath": "pages/images/tab/index1.png"
+      },
+      {
+        "pagePath": "pages/shopnearby/shopnearby",
+        "text": "附近",
+        "iconPath": "pages/images/tab/shopnearby.png",
+        "selectedIconPath": "pages/images/tab/shopnearby1.png"
+      },
+      {
+        "pagePath": "pages/shopclass/shopclass",
+        "text": "分类",
+        "iconPath": "pages/images/tab/shopclass.png",
+        "selectedIconPath": "pages/images/tab/shopclass1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "window": {
+    "navigationBarBackgroundColor":"#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "永辉生活",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  }
+}
